@@ -202,6 +202,28 @@ a {
   color: inherit;
 }
 
+.header {
+  padding-top: 38px;
+  padding-inline: 70px;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+.header__menu {
+  font-size: 16px;
+  font-weight: bold;
+  margin-left: auto;
+}
+.header__menu-list {
+  display: flex;
+  flex-direction: row;
+  -moz-column-gap: 43px;
+       column-gap: 43px;
+}
 .button {
   background-color: var(--color-light-brown);
   border-radius: var(--border-radius-large);
@@ -209,4 +231,6 @@ a {
   border: none;
   padding-inline: 28px;
   padding-block: 13px;
+  font-weight: bold;
+  font-size: 14px;
 }/*# sourceMappingURL=styles.css.map */
