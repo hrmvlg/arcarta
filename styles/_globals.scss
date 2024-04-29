@@ -1,6 +1,7 @@
 body{
     color: var(--color-dark);
-    background-color: var( --color-light-beige);
+    background: linear-gradient(var(--color-light-beige), var(--color-white));
+    background-repeat: no-repeat;
     font-family: var(--font-family-base);
     font-size: 20px;
     font-weight: 400;

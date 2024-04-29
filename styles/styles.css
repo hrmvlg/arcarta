@@ -187,6 +187,7 @@ svg * {
   --color-tagline-dark: #4D4D4D;
   --color-card-bg: #FFFAF2;
   --card-box-shadow: 1px 1px 20px 0px #DDDDDD;
+  --quiz-box-shadow: 1px 1px 12px 0px rgba(0, 0, 0, 50%), -8px 8px 0px 0px var(--color-green);
   --border-radius: 10px;
   --border-radius-medium: 20px;
   --border-radius-large: 50px;
@@ -196,7 +197,8 @@ svg * {
 
 body {
   color: var(--color-dark);
-  background-color: var(--color-light-beige);
+  background: linear-gradient(var(--color-light-beige), var(--color-white));
+  background-repeat: no-repeat;
   font-family: var(--font-family-base);
   font-size: 20px;
   font-weight: 400;
@@ -310,8 +312,10 @@ a {
 .tagline-bg {
   border-radius: var(--border-radius-medium);
   font-weight: bold;
+  max-height: 25px;
   padding-inline: 12px;
   padding-block: 5px;
+  align-content: center;
 }
 .tagline-bg--pink {
   background-color: var(--color-tagline-pink);
@@ -376,4 +380,71 @@ a {
 .solutions-card__button {
   margin-top: 23px;
   margin-bottom: 34px;
+}
+
+.quiz {
+  margin-top: 177px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -moz-column-gap: 85px;
+       column-gap: 85px;
+}
+.quiz__card {
+  background-color: var(--color-green);
+  border-radius: var(--border-radius);
+  color: var(--color-white);
+  width: 220px;
+  height: 260px;
+  padding: 25px;
+  box-shadow: var(--quiz-box-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.quiz__card-number {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+}
+.quiz__card-icon {
+  margin-top: 23px;
+}
+.quiz__card-title {
+  font-size: 28px;
+  font-weight: bold;
+  line-height: 32px;
+  margin-top: 12px;
+}
+.quiz__card-begin-button {
+  margin-top: 33px;
+  width: 170px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 9px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+}
+.quiz__body {
+  max-width: 470px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.quiz__title {
+  margin-top: 18px;
+  font-size: 53px;
+  font-weight: bold;
+  line-height: 62px;
+}
+.quiz__description {
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 33px;
+  margin-top: 25px;
+}
+.quiz__button {
+  margin-top: 23px;
 }/*# sourceMappingURL=styles.css.map */

@@ -2,8 +2,10 @@
 
     border-radius: var(--border-radius-medium);
     font-weight: bold;
+    max-height: 25px;
     padding-inline: 12px;
     padding-block: 5px;
+    align-content: center;
     
     &--pink{
         background-color: var(--color-tagline-pink);
