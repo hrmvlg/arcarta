@@ -176,13 +176,16 @@ svg * {
   --color-dark-beige: #FAF7F3;
   --color-dark: #322F2E;
   --color-dark-alt: #313131;
-  --color-light-brown: #C47344;
+  --color-brown: #C47344;
   --color-gray: #D3D3D3;
-  --color-pink: #F9A28F;
   --color-green: #32686F;
   --color-black: #000;
   --color-white: #fff;
+  --color-tagline-light: #F9EDE2;
+  --color-tagline-pink: #F9A28F;
+  --color-tagline-dark: #4D4D4D;
   --border-radius: 10px;
+  --border-radius-medium: 20px;
   --border-radius-large: 50px;
   --font-family-base: "Roboto", sans-serif;
   --container-width: 1240px;
@@ -225,7 +228,7 @@ a {
        column-gap: 43px;
 }
 .button {
-  background-color: var(--color-light-brown);
+  background-color: var(--color-brown);
   border-radius: var(--border-radius-large);
   color: var(--color-white);
   border: none;
@@ -233,4 +236,85 @@ a {
   padding-block: 13px;
   font-weight: bold;
   font-size: 14px;
+}
+
+.hero {
+  padding-top: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__main {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__title {
+  margin-top: 11px;
+  font-size: 110px;
+  font-weight: bold;
+  color: var(--color-dark);
+  line-height: 119px;
+}
+.hero__description {
+  margin-top: 28px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 33px;
+  max-width: 524px;
+  text-align: center;
+}
+.hero__button {
+  margin-top: 20px;
+}
+.hero__galleries {
+  margin-top: 52px;
+}
+.hero__galleries-list {
+  display: flex;
+  justify-content: space-between;
+  -moz-column-gap: 35px;
+       column-gap: 35px;
+}
+.hero__galleries-item {
+  max-width: 255px;
+  max-height: 95px;
+}
+.hero__whatis {
+  margin-top: 30px;
+  max-width: 300px;
+  color: var(--color-brown);
+}
+.hero__whatis-link {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 7px;
+       column-gap: 7px;
+}
+.hero__whatis__text {
+  --paragraphMarginBottom: 0;
+}
+.hero__picture {
+  margin-top: 99px;
+}
+
+.tagline-bg {
+  border-radius: var(--border-radius-medium);
+  font-weight: bold;
+  padding-inline: 12px;
+  padding-block: 5px;
+}
+.tagline-bg--pink {
+  background-color: var(--color-tagline-pink);
+  color: var(--color-white);
+  font-size: 12px;
+}
+.tagline-bg--light {
+  background-color: var(--color-tagline-light);
+  color: var(--color-tagline-dark);
+  font-size: 13px;
+  margin-left: -12px;
+  padding-left: 31px;
+  padding-right: 20px;
 }/*# sourceMappingURL=styles.css.map */

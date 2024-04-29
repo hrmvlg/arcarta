@@ -1,0 +1,22 @@
+.tagline-bg{
+
+    border-radius: var(--border-radius-medium);
+    font-weight: bold;
+    padding-inline: 12px;
+    padding-block: 5px;
+    
+    &--pink{
+        background-color: var(--color-tagline-pink);
+        color: var(--color-white);
+        font-size: 12px;
+    }
+
+    &--light{
+        background-color: var(--color-tagline-light);
+        color:  var(--color-tagline-dark);
+        font-size: 13px;
+        margin-left: -12px;
+        padding-left: 31px;
+        padding-right: 20px;
+    }
+}
