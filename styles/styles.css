@@ -178,12 +178,15 @@ svg * {
   --color-dark-alt: #313131;
   --color-brown: #C47344;
   --color-gray: #D3D3D3;
+  --color-gray-button: #E1DED9;
   --color-green: #32686F;
   --color-black: #000;
   --color-white: #fff;
   --color-tagline-light: #F9EDE2;
   --color-tagline-pink: #F9A28F;
   --color-tagline-dark: #4D4D4D;
+  --color-card-bg: #FFFAF2;
+  --card-box-shadow: 1px 1px 20px 0px #DDDDDD;
   --border-radius: 10px;
   --border-radius-medium: 20px;
   --border-radius-large: 50px;
@@ -236,6 +239,11 @@ a {
   padding-block: 13px;
   font-weight: bold;
   font-size: 14px;
+}
+.button--light {
+  border: 2px solid var(--color-gray-button);
+  background: transparent;
+  color: var(--color-black);
 }
 
 .hero {
@@ -317,4 +325,55 @@ a {
   margin-left: -12px;
   padding-left: 31px;
   padding-right: 20px;
+}
+
+.solutions {
+  margin-top: 140px;
+}
+.solutions__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.solutions-card {
+  background-color: var(--color-card-bg);
+  width: 490px;
+  height: 578px;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-box-shadow);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.solutions-card__image {
+  margin-top: 51px;
+}
+.solutions-card__body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.solutions-card__title {
+  max-width: 335px;
+  margin-top: 26px;
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 52px;
+  text-align: center;
+}
+.solutions-card__description {
+  max-width: 437px;
+  text-align: center;
+  margin-top: 16px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+}
+.solutions-card__button {
+  margin-top: 23px;
+  margin-bottom: 34px;
 }/*# sourceMappingURL=styles.css.map */
