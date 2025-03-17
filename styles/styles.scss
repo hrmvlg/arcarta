@@ -1,17 +1,22 @@
-@import 
-    'normalize',
-    'fonts',
-    'variables',
-    'globals';
+@import 'media',
+'mixins',
+'normalize',
+'fonts',
+'variables',
+'globals',
+'utils';
 
-@import
-    'blocks/header',
-    'blocks/button',
-    'blocks/hero',
-    'blocks/tagline-bg',
-    'blocks/solutions',
-    'blocks/solutions-card',
-    'blocks/quiz',
-    'blocks/feedback-form',
-    'blocks/footer',
-    'blocks/text-light';
+@import 'blocks/header',
+'blocks/button',
+'blocks/hero',
+'blocks/tagline-bg',
+'blocks/solutions',
+'blocks/solutions-card',
+'blocks/quiz',
+'blocks/feedback-form',
+'blocks/footer',
+'blocks/text-light',
+'blocks/burger-button',
+'blocks/cross-button',
+'blocks/mobile-overlay'
+;

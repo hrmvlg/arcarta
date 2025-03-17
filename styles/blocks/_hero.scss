@@ -37,6 +37,7 @@
     &__galleries {
 
         margin-top: 52px;
+        margin: 0 auto;
 
         &-list {
             display: flex;
@@ -44,32 +45,34 @@
             column-gap: 35px;
         }
 
-        &-item{
+        &-item {
             max-width: 255px;
             max-height: 95px;
+            min-height: calc(95px/2);
+            min-width: calc(255px/2);
         }
     }
 
 
-    &__whatis{
+    &__whatis {
 
         margin-top: 30px;
         max-width: 300px;
         color: var(--color-brown);
 
-        &-link{
+        &-link {
             display: flex;
             align-items: center;
             column-gap: 7px;
         }
 
-        &__text{
+        &__text {
             --paragraphMarginBottom: 0;
         }
 
     }
 
-    &__picture{
+    &__picture {
         margin-top: 99px;
     }
 }
