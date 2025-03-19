@@ -1,46 +1,82 @@
-.solutions-card{
+.solutions-card {
     background-color: var(--color-card-bg);
-    width: 490px;
-    height: 578px;
     border-radius: var(--border-radius);
     box-shadow: var(--card-box-shadow);
-    
+    width: 490px;
+    height: 578px;
+    aspect-ratio: 490 / 578;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    &__image{
-        margin-top: 51px;
+    @include tablet {
+        width: 245px;
+        height: 289px;
     }
 
-    &__body{
+    &__image {
+        margin-top: 51px;
+
+        @include tablet {
+            height: 100px;
+            width: auto;
+            margin-top: 25px;
+        }
+
+    }
+
+    &__body {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
 
-    &__title{
+    &__title {
         max-width: 335px;
         margin-top: 26px;
         font-size: 42px;
         font-weight: bold;
         line-height: 52px;
         text-align: center;
+
+        @include tablet {
+            font-size: 21px;
+            line-height: 26px;
+            margin-top: 13px;
+        }
     }
 
-    &__description{
+    &__description {
         max-width: 437px;
         text-align: center;
         margin-top: 16px;
         font-size: 16px;
         font-weight: 500;
         line-height: 28px;
+
+        @include tablet {
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 8px;
+        }
     }
 
-    &__button{
+    &__button {
         margin-top: 23px;
         margin-bottom: 34px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @include tablet {
+            height: 40px;
+            margin-bottom: 17px;
+            padding: 10px;
+            font-size: 14px;
+            margin-top: 11px;
+        }
     }
 }

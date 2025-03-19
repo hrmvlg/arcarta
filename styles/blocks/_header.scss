@@ -1,11 +1,23 @@
 .header {
-
-    padding-top: 38px;
+    margin-top: 38px;
+    margin-bottom: 140px;
+    background-color: var(--color-light-beige);
+    box-shadow: 0 0 0 70px var(--color-light-beige);
     padding-inline: 70px;
+    height: 90px;
+    position: relative;
+    z-index: 2;
 
     @include tablet {
-        padding-top: 28px;
+        margin-top: 20px;
+        margin-bottom: 70px;
         padding-inline: 20px;
+        height: 48px;
+        box-shadow: 0 0 0 20px var(--color-light-beige);
+    }
+
+    @include mobile {
+        margin-bottom: 45px;
     }
 
     &__inner {
@@ -25,12 +37,11 @@
                     min-width: 70px;
                     min-height: 14px;
                 }
-
             }
 
             @include tablet {
                 min-width: 93.3px;
-                min-height: 18.6x;
+                min-height: 18.6px;
             }
         }
     }
@@ -55,7 +66,6 @@
             @include mobile-s-above {
                 column-gap: 20px;
             }
-
         }
 
         &-item {}

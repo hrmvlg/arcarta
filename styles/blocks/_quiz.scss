@@ -1,11 +1,19 @@
-.quiz{
-    margin-top: 177px;
+.quiz {
     display: flex;
     align-items: center;
     justify-content: center;
     column-gap: 85px;
+    margin-bottom: 135px;
+    
+    @include tablet {
+        column-gap: 60px;
+    }
 
-    &__card{
+    @include mobile {
+        margin-bottom: 45px;
+    }
+
+    &__card {
         background-color: var(--color-green);
         border-radius: var(--border-radius);
         color: var(--color-white);
@@ -18,24 +26,24 @@
         flex-direction: column;
         align-items: start;
 
-        &-number{
+        &-number {
             font-size: 14px;
             font-weight: 400;
             line-height: 20px;
         }
 
-        &-icon{
+        &-icon {
             margin-top: 23px;
         }
 
-        &-title{
+        &-title {
             font-size: 28px;
             font-weight: bold;
             line-height: 32px;
             margin-top: 12px;
         }
 
-        &-begin-button{
+        &-begin-button {
 
             margin-top: 33px;
             width: 170px;
@@ -43,7 +51,7 @@
             justify-content: space-between;
 
             padding-top: 9px;
-            border-top: 1px solid rgba(255,255,255,0.18);
+            border-top: 1px solid rgba(255, 255, 255, 0.18);
             font-size: 14px;
             font-weight: 500;
             line-height: 20px;
@@ -51,28 +59,60 @@
 
     }
 
-    &__body{
+    &__body {
         max-width: 470px;
         display: flex;
         flex-direction: column;
         align-items: start;
+
+        @include mobile {
+            background-color: var(--color-green);
+            border-radius: var(--border-radius);
+            padding: 25px;
+            box-shadow: var(--quiz-box-shadow);
+            color: var(--color-white);
+        }
     }
 
-    &__title{
+    &__title {
         margin-top: 18px;
         font-size: 53px;
         font-weight: bold;
         line-height: 62px;
+
+        @include tablet {
+            font-size: 40px;
+            line-height: 54px;
+        }
+
+        @include mobile {
+            font-size: 28px;
+            line-height: 32px;
+        }
     }
 
-    &__description{
+    &__description {
         font-size: 21px;
         font-weight: 500;
         line-height: 33px;
         margin-top: 25px;
+
+        @include tablet {
+            font-size: 20px;
+            line-height: 32px;
+        }
+
+        @include mobile {
+            font-size: 16px;
+            line-height: 24px;
+        }
     }
 
-    &__button{
+    &__button {
         margin-top: 23px;
+
+        @include mobile {
+            color: var(--color-white);
+        }
     }
 }

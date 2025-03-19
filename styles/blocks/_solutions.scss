@@ -1,11 +1,46 @@
-.solutions{
-    margin-top: 140px;
+.solutions {
+    margin-bottom: 177px;
+    position: relative;
 
-    &__list{
+    @include tablet {
+        margin-bottom: 70px;
+    }
+
+    @include mobile {
+        margin-bottom: 45px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        background: linear-gradient(var(--color-light-beige), var(--color-white));
+        width: 100vw;
+        height: 159%;
+        z-index: -1;
+        top: -100px;
+        left: -70px;
+
+        @include desktop {
+            left: -50px;
+            height: 129%;
+        }
+
+        @include tablet {
+            left: -20px;
+            height: 195%;
+        }
+    }
+
+    &__list {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         gap: 30px;
+        position: relative;
+        z-index: 2;
+
+        @include desktop {
+            gap: 20px;
+        }
     }
-    
 }

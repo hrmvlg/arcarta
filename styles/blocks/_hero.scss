@@ -1,8 +1,37 @@
 .hero {
-    padding-top: 140px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--color-light-beige);
+    box-shadow: 0 0 0 70px var(--color-light-beige);
+    margin-bottom: 140px;
+    position: relative;
+
+    @include mobile-s {
+        margin-bottom: 45px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 91%;
+        width: 100vw;
+        height: 32.3vw;
+        max-height: 465px;
+        background-color: var(--color-background-shadow);
+    }
+
+    &__tagline {
+        margin-bottom: 28px;
+        white-space: nowrap;
+        display: flex;
+        flex-direction: row;
+        column-gap: 5px;
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
+    }
 
     &__main {
         max-width: 700px;
@@ -12,53 +41,84 @@
     }
 
     &__title {
-        margin-top: 11px;
         font-size: 110px;
         font-weight: bold;
         color: var(--color-dark);
         line-height: 119px;
+        margin-bottom: 28px;
+
+        @include mobile {
+            font-size: 60px;
+            line-height: 65px;
+        }
     }
 
     &__description {
-        margin-top: 28px;
+        margin-bottom: 20px;
         font-size: 21px;
         font-weight: 500;
         line-height: 33px;
         max-width: 524px;
         text-align: center;
 
+        @include mobile {
+            font-size: 16px;
+            line-height: 26px;
+            max-width: 350px;
+        }
     }
 
     &__button {
-        margin-top: 20px;
-    }
+        margin-bottom: 50px;
 
+        @include tablet {
+            margin-bottom: 30px;
+        }
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
+    }
 
     &__galleries {
 
-        margin-top: 52px;
-        margin: 0 auto;
+        margin: 0 auto 30px auto;
 
         &-list {
             display: flex;
-            justify-content: space-between;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
             column-gap: 35px;
         }
 
         &-item {
             max-width: 255px;
             max-height: 95px;
-            min-height: calc(95px/2);
-            min-width: calc(255px/2);
-        }
-    }
 
+            @include tablet {
+                max-width: 150px;
+                max-height: 56px;
+            }
+
+            &>img {
+                max-width: 255px;
+                max-height: 95px;
+
+                @include tablet {
+                    max-width: 150px;
+                    max-height: 56px;
+                }
+            }
+        }
+
+    }
 
     &__whatis {
 
-        margin-top: 30px;
         max-width: 300px;
         color: var(--color-brown);
+        margin-bottom: 100px;
 
         &-link {
             display: flex;
@@ -66,13 +126,59 @@
             column-gap: 7px;
         }
 
-        &__text {
+        &-text {
             --paragraphMarginBottom: 0;
         }
 
+        &-icon {
+
+            &-wrapper {
+                width: 20px;
+                height: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background-color: var(--color-brown);
+            }
+        }
+
+        @include tablet {
+            margin-bottom: 45px;
+        }
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
     }
 
     &__picture {
-        margin-top: 99px;
+        position: relative;
+        width: 100vw;
+        height: 46.6vw;
+
+        @include mobile-s {
+            height: (345 / 325) * 100vw;
+        }
+
+        &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            aspect-ratio: 1440 / 670;
+            content: '';
+            //background-color: var(--color-light-beige);
+            background-image: url('../images/hero-bg.svg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 2;
+
+            @include mobile-s {
+                aspect-ratio: 346 / 325;
+                background-image: url('../images/form-pic.svg');
+            }
+        }
     }
 }
