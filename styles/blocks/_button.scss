@@ -1,5 +1,5 @@
-.button{
-    background-color: var( --color-brown);
+.button {
+    background-color: var(--color-brown);
     border-radius: var(--border-radius-large);
     color: var(--color-white);
     border: none;
@@ -7,14 +7,25 @@
     padding-block: 13px;
     font-weight: bold;
     font-size: 14px;
-
     display: flex;
     justify-content: center;
     align-items: center;
 
-    &--light{
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+    &:hover {
+        background-color: var(--color-dark-brown);
+    }
+
+    &--light {
         border: 2px solid var(--color-gray-button);
         background: transparent;
         color: var(--color-black);
+
+        &:hover {
+            background-color: var(--color-brown);
+            border: 2px solid var(--color-brown);
+            color: var(--color-white);
+        }
     }
 }
