@@ -8,12 +8,23 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
 
     @include tablet {
         width: 245px;
         height: 289px;
+    }
+
+    &--short {
+        width: 496.9px;
+        height: 498px;
+        aspect-ratio: 496.9 / 498;
+
+        @include tablet {
+            width: 245px;
+            height: 245px;
+        }
     }
 
     &__image {
@@ -22,9 +33,8 @@
         @include tablet {
             height: 100px;
             width: auto;
-            margin-top: 25px;
+            margin-top: 10px;
         }
-
     }
 
     &__body {
@@ -70,6 +80,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        width: 152.11px;
+        height: 48px;
+        font-size: 15px;
+        line-height: 20px;
 
         @include tablet {
             height: 40px;

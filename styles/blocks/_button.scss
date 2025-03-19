@@ -8,6 +8,10 @@
     font-weight: bold;
     font-size: 14px;
 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     &--light{
         border: 2px solid var(--color-gray-button);
         background: transparent;

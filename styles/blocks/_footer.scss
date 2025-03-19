@@ -1,6 +1,6 @@
 .footer {
-    margin-top: 146px;
-    margin-inline: 50px;
+    margin-top: 147px;
+    margin-inline: 60px;
     display: flex;
     justify-content: space-between;
     column-gap: 82px;
@@ -110,7 +110,7 @@
     }
 
     &__bottom {
-        padding-inline: 180px;
+        padding-inline: 130px;
         margin-top: 35px;
         padding-bottom: 80px;
         display: flex;
@@ -135,6 +135,7 @@
             align-content: center;
             width: 204px;
             display: flex;
+            align-items: center;
             flex-direction: row;
             column-gap: 10px;
 
@@ -147,7 +148,8 @@
     }
 
     &__privacy {
-        margin-right: 5px;
+        margin-right: 7px;
+        white-space: nowrap;
     }
 
 }
