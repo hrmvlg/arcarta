@@ -42,5 +42,9 @@
         @include desktop {
             gap: 20px;
         }
+
+        @media(min-width: 1670px) {
+            gap: 50px
+        }
     }
 }

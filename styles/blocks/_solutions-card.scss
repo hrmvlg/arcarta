@@ -16,16 +16,16 @@
         height: 289px;
     }
 
-    &--short {
-        width: 496.9px;
-        height: 498px;
-        aspect-ratio: 496.9 / 498;
+    // &--short {
+    //     width: 496.9px;
+    //     height: 498px;
+    //     aspect-ratio: 496.9 / 498;
 
-        @include tablet {
-            width: 245px;
-            height: 245px;
-        }
-    }
+    //     @include tablet {
+    //         width: 245px;
+    //         height: 245px;
+    //     }
+    // }
 
     &__image {
         margin-top: 51px;

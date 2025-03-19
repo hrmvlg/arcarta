@@ -653,6 +653,11 @@ button {
     gap: 20px;
   }
 }
+@media (min-width: 1670px) {
+  .solutions__list {
+    gap: 50px;
+  }
+}
 
 .solutions-card {
   background-color: var(--color-card-bg);
@@ -670,17 +675,6 @@ button {
   .solutions-card {
     width: 245px;
     height: 289px;
-  }
-}
-.solutions-card--short {
-  width: 496.9px;
-  height: 498px;
-  aspect-ratio: 496.9/498;
-}
-@media (max-width: 1023px) {
-  .solutions-card--short {
-    width: 245px;
-    height: 245px;
   }
 }
 .solutions-card__image {
