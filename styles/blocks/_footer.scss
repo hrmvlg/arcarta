@@ -93,6 +93,10 @@
             font-size: 13px;
             line-height: 20px;
             white-space: nowrap;
+
+            &:hover {
+                color: var(--color-dark-brown);
+            }
         }
 
         &-solutions {

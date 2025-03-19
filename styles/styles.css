@@ -1087,6 +1087,9 @@ button {
   line-height: 20px;
   white-space: nowrap;
 }
+.footer__body-item:hover {
+  color: var(--color-dark-brown);
+}
 .footer__body-solutions {
   min-width: 139px;
 }
